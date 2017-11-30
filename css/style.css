@@ -95,6 +95,7 @@ img{
 	font-weight: 200;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	color: #000;
 }
 
 #features p{
@@ -103,26 +104,51 @@ img{
 	margin-bottom: 40px;
 }
 
+#features a{
+	text-decoration: none;
+}
+
+#features h4:hover{
+	color: #56a79a;
+}
+
+#features img{
+	box-shadow: 0 10px 15px 0 #000;
+}
+
 
 
 /* INFO */
 #info{
-	background-image: url('../img/doughnut.jpg');
-	background-position: center;
 	color: #000;
-	padding-top: 10px;
+
+}
+
+#info .bg-image{
+	position: absolute;
+	background: #333 url('../img/doughnut.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	/*height: 100%;*/
+	height: 500px;
+	z-index: -1;
+	opacity: 0.3;
 }
 
 
 #info h2{
 	font-size: 35px;
 	margin: 0;
+	padding-top: 100px;
 	padding-bottom: 10px;
 }
 
 #info p{
-	line-height: 1em;
+	/*line-height: 1em;*/
 	font-size: 20px;
+	text-align: left;
 }
 
 #info ul{
@@ -153,16 +179,7 @@ img{
 	line-height: 2em;
 }
 
-#company input[type="text"]{
-	padding: 7px;
-}
 
-#company button{
-	background: #222;
-	color: #fff;
-	padding: 10px;
-	border: 0;
-}
 
 /* FOOTER */
 #main-footer{
@@ -184,3 +201,14 @@ img{
 		padding: 40px 10px;
 	}
 }
+
+/*@media(min-width: 400px){
+	#info .bg-image{
+		height: 100%;
+		overflow: hidden !important;
+	}
+	#company i{
+		display: none;
+	}*/
+
+
