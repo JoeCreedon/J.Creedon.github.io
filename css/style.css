@@ -116,6 +116,10 @@ img{
 	box-shadow: 0 10px 15px 0 #000;
 }
 
+#features img:hover{
+	opacity: 0.6;
+}
+
 
 
 /* INFO */
@@ -202,13 +206,18 @@ img{
 	}
 }
 
-/*@media(min-width: 400px){
+@media(max-width: 400px){
+
+	#info p{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 	#info .bg-image{
 		height: 100%;
 		overflow: hidden !important;
 	}
 	#company i{
 		display: none;
-	}*/
+	}
 
 
