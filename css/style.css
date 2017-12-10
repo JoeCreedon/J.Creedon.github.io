@@ -1,9 +1,14 @@
+html{
+	overflow-x: hidden;
+}
+
 body{
 	font-family: 'Open-sans', sans-serif;
 	font-size: 17px;
 	line-height: 1.5em;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 img{
@@ -131,6 +136,7 @@ img{
 #info{
 	color: #000;
 	padding-bottom: 100px;
+	position: relative;
 
 }
 
@@ -141,9 +147,11 @@ img{
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: 100%;
+	/*height: 100%;*/
 	z-index: -1;
 	opacity: 0.3;
+	top: 0;
+	bottom: 0;
 }
 
 
@@ -240,6 +248,7 @@ img{
 #cms-info{
 	color: #000;
 	padding-bottom: 100px;
+	position: relative;
 
 }
 
@@ -250,9 +259,11 @@ img{
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: 100%;
+	/*height: 100%;*/
 	z-index: -1;
 	opacity: 0.3;
+	top: 0;
+	bottom: 0;
 }
 
 
@@ -334,6 +345,7 @@ img{
 #grid-info{
 	color: #000;
 	padding-bottom: 100px;
+	position: relative;
 
 }
 
@@ -344,9 +356,10 @@ img{
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: 100%;
 	z-index: -1;
 	opacity: 0.3;
+	top: 0;
+	bottom: 0;
 }
 
 
@@ -427,6 +440,7 @@ img{
 #weight-info{
 	color: #000;
 	padding-bottom: 100px;
+	position: relative;
 
 }
 
@@ -437,9 +451,10 @@ img{
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: 100%;
 	z-index: -1;
 	opacity: 0.3;
+	top: 0;
+	bottom: 0;
 }
 
 
@@ -520,6 +535,7 @@ img{
 #book-info{
 	color: #000;
 	padding-bottom: 100px;
+	position: relative;
 
 }
 
@@ -530,9 +546,10 @@ img{
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: 100%;
 	z-index: -1;
 	opacity: 0.3;
+	top: 0;
+	bottom: 0;
 }
 
 
@@ -610,6 +627,7 @@ img{
 #para-info{
 	color: #000;
 	padding-bottom: 100px;
+	position: relative;
 
 }
 
@@ -620,9 +638,10 @@ img{
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: 100%;
 	z-index: -1;
 	opacity: 0.3;
+	top: 0;
+	bottom: 0;
 }
 
 
@@ -700,6 +719,7 @@ img{
 #tech-info{
 	color: #000;
 	padding-bottom: 100px;
+	position: relative;
 
 }
 
@@ -710,9 +730,10 @@ img{
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: 100%;
 	z-index: -1;
 	opacity: 0.3;
+	top: 0;
+	bottom: 0;
 }
 
 
@@ -776,13 +797,17 @@ img{
 
 @media(max-width: 400px){
 
+	#features h2{
+		line-height: 1em;
+	}
+
 	#info p{
 		padding-left: 20px;
 		padding-right: 20px;
 	}
 	#info .bg-image{
 		height: 100%;
-		overflow: hidden !important;
+		overflow: hidden;
 	}
 
 	#info h2.skills{
