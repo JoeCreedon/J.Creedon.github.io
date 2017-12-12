@@ -210,7 +210,7 @@ img{
 /* FOOTER */
 #main-footer{
 	background: rgb(46, 204, 113);
-	color: #fff;
+	color: #000;
 }
 
 /* CMS-SHOWCASE */
@@ -795,6 +795,13 @@ img{
 	}
 }
 
+/*@media(max-width: 1024px){
+	#features{
+		width: 100%;
+		margin-right: 100px; 
+	}
+}*/
+
 @media(max-width: 400px){
 
 	#features h2{
@@ -863,6 +870,14 @@ img{
 	padding: 40px;
 	opacity: 0.9;
 	line-height: 3em;
+    }
+
+    #book-showcase .showcase-content .primary-text{
+    	display:none;
+    }
+
+    #book-showcase .showcase-content{
+    	text-transform: capitalize;
     }
 
 	#book-info p{
